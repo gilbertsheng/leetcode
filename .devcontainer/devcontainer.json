@@ -13,7 +13,6 @@
     },
     "workspaceMount": "",
     "runArgs": ["--volume=${localWorkspaceFolder}:/workspaces/${localWorkspaceFolderBasename}:Z"],
-    "postCreateCommand": "cp /tmp/Gemfile.lock /workspaces/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
             "extensions": ["Shopify.ruby-lsp"],
