@@ -5,12 +5,9 @@ def can_make_subsequence(str1, str2)
   i = j = 0
   m, n = str1.size, str2.size
 
-  increment = ->(x) { x == 'z' ? 'a' : x.next }
-
   while i < m && j < n
-    a, b = str1[i], str2[j]
-
-    j += 1 if b == a || b == increment[a]
+    d = str2[j].ord - str1[i].ord
+    j += 1 if d == 0 || d == 1 || d == -25
 
     i += 1
   end
